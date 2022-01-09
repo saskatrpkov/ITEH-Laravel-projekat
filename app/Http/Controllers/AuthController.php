@@ -17,8 +17,7 @@ class AuthController extends Controller
                 "error" => "Invalid credentials"
             ], 400);
         }
-        $token = $user->createToken($user->email)->plainTextToken;
-        response()->json(["token" => $token], 200);
+        return $user->createToken($user->email)->plainTextToken;
     }
     public function logout(Request $req)
     {
