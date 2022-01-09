@@ -5,8 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Food extends Model
+class Ingredient extends Model
 {
     use HasFactory;
-    protected $fillable = ['name', 'description', 'vegan', 'gluten_free', 'prep_time'];
+    protected $fillable = ['name', 'vegan', 'gluten_free'];
 }
