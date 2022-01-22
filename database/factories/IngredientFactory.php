@@ -14,7 +14,7 @@ class IngredientFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->name,
+            'name' => $this->faker->word,
             'vegan' => $this->faker->boolean(60),
             'gluten_free' => $this->faker->boolean(40)
         ];
